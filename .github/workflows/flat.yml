@@ -20,19 +20,19 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: http://web.mta.info/status/weekendstatus.js
-          downloaded_filename: weekendstatus.js
+          downloaded_filename: ./raw/weekendstatus.js
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
           http_url: http://web.mta.info/status/weekendroutestatus.js
-          downloaded_filename: weekendroutestatus.js
+          downloaded_filename: ./raw/weekendroutestatus.js
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
           http_url: http://web.mta.info/status/weekendboroughstatus.js
-          downloaded_filename: weekendboroughstatus.js
+          downloaded_filename: ./raw/weekendboroughstatus.js
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
           http_url: http://web.mta.info/weekender/Data/LinesStaticData.js
-          downloaded_filename: LinesStaticData.js
+          downloaded_filename: ./raw/LinesStaticData.js
